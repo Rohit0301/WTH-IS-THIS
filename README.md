@@ -1,44 +1,43 @@
 # WTF-is-this
 
-`
 // normal mode | 'use strict' mode
 
 
-//console
-console.log(this); 	//window | window
+//console </br>
++console.log(this); 	//window | window
+</br>
 
+//IIFE</br>
+(function fn(){</br>
+	console.log(this); 	// window | undefined </br>
+})()</br>
 
-//IIFE
-(function fn(){
-	console.log(this); 	// window | undefined
-})()
+</br>
+//function</br>
+function fn1(){</br>
+	console.log(this); 	//window | undefined</br>
+}</br>
+</br>
+//timout inside funtion</br>
+function fn2(){</br>
+	setTimeout(()=>{</br>
+		console.log(this) 	//window | undefined</br>
+	},1000);</br>
+}</br>
+</br>
+//promise inside function</br>
+function fn3(){</br>
+	var p = new Promise((re,ro)=>{</br>
+		console.log(this); 	//window | undefined</br>
+	})</br>
+}</br>
+</br>
+//function expression</br>
+var fn4 = function() {</br>
+	console.log(this); 	//window | window</br>
+}</br>
 
-
-//function
-function fn1(){
-	console.log(this); 	//window | undefined
-}
-
-//timout inside funtion
-function fn2(){
-	setTimeout(()=>{
-		console.log(this) 	//window | undefined
-	},1000);
-}
-
-//promise inside function
-function fn3(){
-	var p = new Promise((re,ro)=>{
-		console.log(this); 	//window | undefined
-	})
-}
-
-//function expression
-var fn4 = function() {
-	console.log(this); 	//window | window
-}
-
-
+</br>
 //arrow-function
 const fn5 = () => {
 	console.log(this); 	//window | undefined
