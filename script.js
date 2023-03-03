@@ -56,11 +56,6 @@ const fn7 = () => {
 	})
 }
 
-//arrow-function expression
-var fn8 = () => {
-	console.log(this,"7"); 	//window | window
-}
-
 
 
 //object
