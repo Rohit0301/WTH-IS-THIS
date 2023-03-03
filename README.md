@@ -1,8 +1,6 @@
 # WTF-is-this
 
-<html>
-<body>
-<p>
+{
 // normal mode | 'use strict' mode
 
 
@@ -167,6 +165,4 @@ setTimeout(()=>{
 // obj.fn1()
 // obj.fn2()
 // obj.fn3()
-</p>
-</body>
-</html>
+}
