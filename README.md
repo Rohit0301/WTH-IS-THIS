@@ -1,5 +1,6 @@
 # WTF-is-this
 
+
 // normal mode | 'use strict' mode
 
 
@@ -164,5 +165,4 @@ setTimeout(()=>{
 // obj.fn1()
 // obj.fn2()
 // obj.fn3()
-
 
