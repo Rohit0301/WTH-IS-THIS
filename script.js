@@ -151,7 +151,6 @@ setTimeout(()=>{
 // fn5()
 // fn6()
 // fn7()
-// fn8()
 
 
 // obj.fn()
